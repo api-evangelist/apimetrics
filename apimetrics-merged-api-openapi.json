@@ -1,0 +1,615 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "APImetrics Merged API",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https"
+    ],
+    "paths": {
+        "\/auth\/": {
+            "get": {
+                "summary": "List Authentication Settings",
+                "description": "List Authentication Settings",
+                "operationId": "ListAuthenticationSettings",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/auth\/{id}\/": {
+            "delete": {
+                "summary": "Delete an Authentication Setting",
+                "description": "Delete an Authentication Setting",
+                "operationId": "DeleteAnAuthenticationSetting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get an existing Authentication Setting",
+                "description": "Get an existing Authentication Setting",
+                "operationId": "GetAnExistingAuthenticationSetting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an existing Authentication Setting",
+                "description": "Update an existing Authentication Setting",
+                "operationId": "UpdateAnExistingAuthenticationSetting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            }
+        },
+        "\/calls\/": {
+            "get": {
+                "summary": "List API Calls",
+                "description": "List API Calls",
+                "operationId": "ListAPICalls",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create new API Call",
+                "description": "Create new API Call",
+                "operationId": "CreateNewAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    }
+                ]
+            }
+        },
+        "\/calls\/auth\/{auth_id}\/": {
+            "get": {
+                "summary": "List API Calls by Authentication",
+                "description": "List API Calls by Authentication",
+                "operationId": "ListAPICallsbyAuthentication",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "auth_id",
+                        "in": "path",
+                        "description": "The ID of the authentication setting"
+                    }
+                ]
+            }
+        },
+        "\/calls\/{id}\/": {
+            "delete": {
+                "summary": "Delete an API Call",
+                "description": "Delete an API Call",
+                "operationId": "DeleteAnAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get an existing API Call",
+                "description": "Get an existing API Call",
+                "operationId": "GetAnExistingAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    },
+                    {
+                        "name": "kind",
+                        "in": "query",
+                        "description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR"
+                    },
+                    {
+                        "name": "location_id",
+                        "in": "query",
+                        "description": "Location where the API Call was made."
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": "ISO formatted date string for the period you wish to view."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Return stats for all calls in the time period specified which had this result."
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an existing API Call",
+                "description": "Update an existing API Call",
+                "operationId": "UpdateAnExistingAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            }
+        },
+        "\/calls\/{id}\/run": {
+            "post": {
+                "summary": "Trigger an API Call to run",
+                "description": "Trigger an API Call to run",
+                "operationId": "TriggerAnAPICallToRun",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "context",
+                        "in": "formData",
+                        "description": "Dictionary of variable names and their values"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    },
+                    {
+                        "name": "location_id",
+                        "in": "formData",
+                        "description": "Location ID of test agent that will make the request"
+                    }
+                ]
+            }
+        },
+        "\/calls\/{id}\/stats\/before": {
+            "get": {
+                "summary": "List Stats from before a date for an API Call",
+                "description": "List Stats from before a date for an API Call",
+                "operationId": "ListStatsFromBeforeDateAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    },
+                    {
+                        "name": "kind",
+                        "in": "query",
+                        "description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return"
+                    },
+                    {
+                        "name": "location_id",
+                        "in": "query",
+                        "description": "Location where the API Call was made."
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": "ISO formatted date string for the period you wish to view."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Return stats for all calls in the time period specified which had this result."
+                    }
+                ]
+            }
+        },
+        "\/calls\/{id}\/stats\/since": {
+            "get": {
+                "summary": "List Stats since a date for an API Call",
+                "description": "List Stats since a date for an API Call",
+                "operationId": "ListStatsSinceDateAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    },
+                    {
+                        "name": "kind",
+                        "in": "query",
+                        "description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of results to return"
+                    },
+                    {
+                        "name": "location_id",
+                        "in": "query",
+                        "description": "Location where the API Call was made."
+                    },
+                    {
+                        "name": "time",
+                        "in": "query",
+                        "description": "ISO formatted date string for the period you wish to view."
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Return stats for all calls in the time period specified which had this result."
+                    }
+                ]
+            }
+        },
+        "\/deployments\/": {
+            "get": {
+                "summary": "List all Deployment",
+                "description": "List all Deployment",
+                "operationId": "ListAllDeployments",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a new Deployment",
+                "description": "Create a new Deployment",
+                "operationId": "CreateANewDeployment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    }
+                ]
+            }
+        },
+        "\/deployments\/call\/{call_id}\/": {
+            "get": {
+                "summary": "Get all Deployments for an API Call",
+                "description": "Get all Deployments for an API Call",
+                "operationId": "GetAllDeploymentForAPICall",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "call_id",
+                        "in": "path",
+                        "description": "ID of the API Call"
+                    }
+                ]
+            }
+        },
+        "\/deployments\/workflow\/{workflow_id}": {
+            "get": {
+                "summary": "Get all Deployments for a Workflow",
+                "description": "Get all Deployments for a Workflow",
+                "operationId": "GetAllDeploymentForAWorkflow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "workflow_id",
+                        "in": "path",
+                        "description": "ID of the Workflow"
+                    }
+                ]
+            }
+        },
+        "\/deployments\/{id}\/": {
+            "delete": {
+                "summary": "Delete a Deployment",
+                "description": "Delete a Deployment",
+                "operationId": "DeleteADeployment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get an existing Deployment",
+                "description": "Get an existing Deployment",
+                "operationId": "GetAnExistingDeployment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an existing Deployment",
+                "description": "Update an existing Deployment",
+                "operationId": "UpdateAnExistingDeployment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            }
+        },
+        "\/reports\/": {
+            "get": {
+                "summary": "List all Reports",
+                "description": "List all Reports",
+                "operationId": "ListAllReports",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a new Report",
+                "description": "Create a new Report",
+                "operationId": "CreateANewReport",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    }
+                ]
+            }
+        },
+        "\/reports\/{id}\/": {
+            "delete": {
+                "summary": "Delete a Report",
+                "description": "Delete a Report",
+                "operationId": "DeleteAReport",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get an existing Report",
+                "description": "Get an existing Report",
+                "operationId": "GetAnExistingReport",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an existing Report",
+                "description": "Update an existing Report",
+                "operationId": "UpdateAnExistingReport",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            }
+        },
+        "\/tokens\/": {
+            "get": {
+                "summary": "List Auth Tokens",
+                "description": "List Auth Tokens",
+                "operationId": "ListAuthTokens",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a new Auth Token",
+                "description": "Create a new Auth Token",
+                "operationId": "CreateANewAuthToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    }
+                ]
+            }
+        },
+        "\/tokens\/auth\/{auth_id}\/": {
+            "get": {
+                "summary": "Get all tokens for an Authentication Setting ",
+                "description": "Get all tokens for an Authentication Setting ",
+                "operationId": "GetAllTokensForAnAuthenticationSetting",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "auth_id",
+                        "in": "path",
+                        "description": "The ID of the authentication setting"
+                    }
+                ]
+            }
+        },
+        "\/tokens\/{id}\/": {
+            "delete": {
+                "summary": "Delete an Auth Token",
+                "description": "Delete an Auth Token",
+                "operationId": "DeleteAnAuthToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get an existing Auth Token",
+                "description": "Get an existing Auth Token",
+                "operationId": "GetAnExistingAuthToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update an Auth Token",
+                "description": "Update an Auth Token",
+                "operationId": "UpdateAnAuthToken",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            }
+        },
+        "\/workflows\/": {
+            "get": {
+                "summary": "List all Workflows",
+                "description": "List all Workflows",
+                "operationId": "ListAllWorkflows",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create new Authentication Settings",
+                "description": "Create new Authentication Settings",
+                "operationId": "CreateNewAuthenticationSettings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    }
+                ]
+            }
+        },
+        "\/workflows\/{id}\/": {
+            "delete": {
+                "summary": "Delete a Workflow",
+                "description": "Delete a Workflow",
+                "operationId": "DeleteAWorkflow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get an existing Workflow",
+                "description": "Get an existing Workflow",
+                "operationId": "GetAnExistingWorkflow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Trigger a Workflow to run now",
+                "description": "Trigger a Workflow to run now",
+                "operationId": "TriggerAWorkflowToRunNow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Create a new Workflow",
+                "description": "Create a new Workflow",
+                "operationId": "CreateANewWorkflow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "Body",
+                        "in": "body",
+                        "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }"
+                    },
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID string of authentication string youre upda"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
