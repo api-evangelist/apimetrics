@@ -1,0 +1,1273 @@
+{
+    "id": "bae5271cf23b3264d917ffc45106312d",
+    "name": "APImetrics Merged API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "a5e3701f08c9c0685b8663e8680247b5",
+            "name": "List Authentication Settings",
+            "url": "https\/auth\/",
+            "description": "List Authentication Settings",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "665b5b1f9a3cea096700159a90fe2214",
+            "name": "Delete an Authentication Setting",
+            "url": "https\/auth\/{id}\/",
+            "description": "Delete an Authentication Setting",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "0ffe3daadf30682ac1ded0829a4ac072",
+            "name": "Get an existing Authentication Setting",
+            "url": "https\/auth\/{id}\/",
+            "description": "Get an existing Authentication Setting",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "cbc435f9a6eb28121635d9f29cfccf00",
+            "name": "Update an existing Authentication Setting",
+            "url": "https\/auth\/{id}\/",
+            "description": "Update an existing Authentication Setting",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "16b14f95eef1f460b024bf4359c5bf8a",
+            "name": "List API Calls",
+            "url": "https\/calls\/",
+            "description": "List API Calls",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "fe07f134b96909e9873d5fc58f170188",
+            "name": "Create new API Call",
+            "url": "https\/calls\/",
+            "description": "Create new API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "346a33e7a00e43754fedd9bdf004e862",
+            "name": "List API Calls by Authentication",
+            "url": "https\/calls\/auth\/{auth_id}\/",
+            "description": "List API Calls by Authentication",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "auth_id",
+                    "description": "The ID of the authentication setting",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "1f4c8802fec99b72b88f1a5e314ecd66",
+            "name": "Delete an API Call",
+            "url": "https\/calls\/{id}\/",
+            "description": "Delete an API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "de345a690896e847f93fc51adf00cd04",
+            "name": "Get an existing API Call",
+            "url": "https\/calls\/{id}\/",
+            "description": "Get an existing API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "kind",
+                    "description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "location_id",
+                    "description": "Location where the API Call was made.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time",
+                    "description": "ISO formatted date string for the period you wish to view.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Return stats for all calls in the time period specified which had this result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9b11ed3afc875a943cb67950cf4979d1",
+            "name": "Update an existing API Call",
+            "url": "https\/calls\/{id}\/",
+            "description": "Update an existing API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "4b2d3f4d1edea5dbb79fae8005cb9003",
+            "name": "Trigger an API Call to run",
+            "url": "https\/calls\/{id}\/run",
+            "description": "Trigger an API Call to run",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "context",
+                    "description": "Dictionary of variable names and their values",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "location_id",
+                    "description": "Location ID of test agent that will make the request",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "de4fa68b54bae1cdc829c60c12d00d8d",
+            "name": "List Stats from before a date for an API Call",
+            "url": "https\/calls\/{id}\/stats\/before",
+            "description": "List Stats from before a date for an API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "kind",
+                    "description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "location_id",
+                    "description": "Location where the API Call was made.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time",
+                    "description": "ISO formatted date string for the period you wish to view.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Return stats for all calls in the time period specified which had this result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "6a1eed4bd269fa50b76c14b2c1bb0c0b",
+            "name": "List Stats since a date for an API Call",
+            "url": "https\/calls\/{id}\/stats\/since",
+            "description": "List Stats since a date for an API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "kind",
+                    "description": "Granularity of data required, one of DAY, WEEK, MONTH, tYEAR",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "limit",
+                    "description": "Maximum number of results to return",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "location_id",
+                    "description": "Location where the API Call was made.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "time",
+                    "description": "ISO formatted date string for the period you wish to view.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Return stats for all calls in the time period specified which had this result.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "2452f3fbc04f838f7d9592b9f9f6fb53",
+            "name": "List all Deployment",
+            "url": "https\/deployments\/",
+            "description": "List all Deployment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "5bb0b048c47463777b6dce9deec70f23",
+            "name": "Create a new Deployment",
+            "url": "https\/deployments\/",
+            "description": "Create a new Deployment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "3f9a0becafff3bf26a13f3ff9b143fd0",
+            "name": "Get all Deployments for an API Call",
+            "url": "https\/deployments\/call\/{call_id}\/",
+            "description": "Get all Deployments for an API Call",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "call_id",
+                    "description": "ID of the API Call",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9e82ce26afad38a7f8650ab82c939aad",
+            "name": "Get all Deployments for a Workflow",
+            "url": "https\/deployments\/workflow\/{workflow_id}",
+            "description": "Get all Deployments for a Workflow",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "workflow_id",
+                    "description": "ID of the Workflow",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c1a141c8de1f6c84e737202d562a3d6",
+            "name": "Delete a Deployment",
+            "url": "https\/deployments\/{id}\/",
+            "description": "Delete a Deployment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e37d2164f3a9cf27d796645511e901aa",
+            "name": "Get an existing Deployment",
+            "url": "https\/deployments\/{id}\/",
+            "description": "Get an existing Deployment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ee0219de7a58592822c4f59262a78cca",
+            "name": "Update an existing Deployment",
+            "url": "https\/deployments\/{id}\/",
+            "description": "Update an existing Deployment",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e52db6b73ac6ac14781db5efbc85fcf3",
+            "name": "List all Reports",
+            "url": "https\/reports\/",
+            "description": "List all Reports",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "596cd793953a8319cc7a6318f35b72a5",
+            "name": "Create a new Report",
+            "url": "https\/reports\/",
+            "description": "Create a new Report",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "22d27a0eb3e1b13fccca25dceddd72e7",
+            "name": "Delete a Report",
+            "url": "https\/reports\/{id}\/",
+            "description": "Delete a Report",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "cc49c95caa9932e669fd58c020d23815",
+            "name": "Get an existing Report",
+            "url": "https\/reports\/{id}\/",
+            "description": "Get an existing Report",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9f635d2de88faf44f9e73c5dfdde5302",
+            "name": "Update an existing Report",
+            "url": "https\/reports\/{id}\/",
+            "description": "Update an existing Report",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e79b7d7c45e5a88430023ff686c2a79a",
+            "name": "List Auth Tokens",
+            "url": "https\/tokens\/",
+            "description": "List Auth Tokens",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "4488561b9abb31fbc0adf2020457dce2",
+            "name": "Create a new Auth Token",
+            "url": "https\/tokens\/",
+            "description": "Create a new Auth Token",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "6c0d2999b952a4c2c45b7d79f0bea472",
+            "name": "Get all tokens for an Authentication Setting ",
+            "url": "https\/tokens\/auth\/{auth_id}\/",
+            "description": "Get all tokens for an Authentication Setting ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "auth_id",
+                    "description": "The ID of the authentication setting",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "15af7dbddd97c7c6fbdc53f3f1ede78e",
+            "name": "Delete an Auth Token",
+            "url": "https\/tokens\/{id}\/",
+            "description": "Delete an Auth Token",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "eacbf1c3b3ec785133bdad73d909e1c4",
+            "name": "Get an existing Auth Token",
+            "url": "https\/tokens\/{id}\/",
+            "description": "Get an existing Auth Token",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "944f42fa0fc65f85640002ed509d3cfe",
+            "name": "Update an Auth Token",
+            "url": "https\/tokens\/{id}\/",
+            "description": "Update an Auth Token",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "a68b8d7a29b9be1899fa33d9ba9fa218",
+            "name": "List all Workflows",
+            "url": "https\/workflows\/",
+            "description": "List all Workflows",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec684ec4ebd8b5d20dced6215565cb7c",
+            "name": "Create new Authentication Settings",
+            "url": "https\/workflows\/",
+            "description": "Create new Authentication Settings",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "ea3761d5cdf3da0bfd4c5a7d8165ed8c",
+            "name": "Delete a Workflow",
+            "url": "https\/workflows\/{id}\/",
+            "description": "Delete a Workflow",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "delete",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9500454bd77348058134c39b290b4be",
+            "name": "Get an existing Workflow",
+            "url": "https\/workflows\/{id}\/",
+            "description": "Get an existing Workflow",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "47630e2c8ed45372bd20fdae2fb6d9c3",
+            "name": "Trigger a Workflow to run now",
+            "url": "https\/workflows\/{id}\/",
+            "description": "Trigger a Workflow to run now",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        },
+        {
+            "id": "deaff27001212cc700b88521e11dac6b",
+            "name": "Create a new Workflow",
+            "url": "https\/workflows\/{id}\/",
+            "description": "Create a new Workflow",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "Body",
+                    "description": "{     meta: {         name: Minimal API test name     },     request: {         method: get,         url: http:\/\/httpbin.org\/get     } }",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "id",
+                    "description": "ID string of authentication string youre upda",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "bae5271cf23b3264d917ffc45106312d",
+            "rawModeData": ""
+        }
+    ]
+}
