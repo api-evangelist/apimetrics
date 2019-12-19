@@ -1,0 +1,117 @@
+{
+    "name": "APImetrics",
+    "description": "API performance monitoring, Cloud Service, SLA monitoring and analysis that gives you answers, not excuses. Find out how today.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1916-apimetrics.jpg",
+    "tags": [
+        "api service provider",
+        "have api",
+        "monitoring"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/apimetrics\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "APIMetrics Deployments API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1916-apimetrics.jpg",
+            "humanURL": "http:\/\/apimetrics.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/apimetrics-deployments-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apimetrics-deployments-api-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "APIMetrics Reports API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1916-apimetrics.jpg",
+            "humanURL": "http:\/\/apimetrics.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/apimetrics-reports-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apimetrics-reports-api-openapi.json"
+                }
+            ]
+        },
+        {
+            "name": "APImetrics Merged API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/1916-apimetrics.jpg",
+            "humanURL": "http:\/\/apimetrics.io",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/apimetrics-merged-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apimetrics-merged-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base URL",
+            "url": "https:\/\/client.apimetrics.io"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/apimetrics.io\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/apimetrics.io\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/apimetrics"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/apimetrics.readme.io\/"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/APImetrics"
+        },
+        {
+            "type": "Pricing",
+            "url": "http:\/\/apimetrics.io\/"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/apimetrics.io\/privacy"
+        },
+        {
+            "type": "Terms Of Service",
+            "url": "http:\/\/apimetrics.io\/tos"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/apimetricstats"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/apimetrics.io"
+        }
+    ]
+}
