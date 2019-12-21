@@ -7,8 +7,8 @@
         "have api",
         "monitoring"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/apimetrics\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -25,8 +25,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/apimetrics-deployments-api.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apimetrics-deployments-api-openapi.json"
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/apimetrics\/master\/apimetrics-deployments-api-postman-collection.json"
                 }
             ]
         },
@@ -43,8 +43,8 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/apimetrics-reports-api.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apimetrics-reports-api-openapi.json"
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/apimetrics\/master\/apimetrics-reports-api-postman-collection.json"
                 }
             ]
         },
@@ -61,14 +61,18 @@
                     "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/apimetrics-merged-api.json"
                 },
                 {
-                    "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apimetrics-merged-api-openapi.json"
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/apimetrics\/master\/apimetrics-merged-api-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Base URL",
             "url": "https:\/\/client.apimetrics.io"
